@@ -2,7 +2,7 @@
 const NOMOR_WA = "6282331025610";
 
 // Pesan default
-const PESAN_DEFAULT = "Halo,Yang ingin tanya jasa pengiriman barang";
+const PESAN_DEFAULT = "Halo, saya ingin tanya tentang jasa pengiriman barang.";
 
 // Fungsi buat URL WhatsApp (tanpa spasi!)
 function buatUrlWA(pesan = PESAN_DEFAULT) {
@@ -15,4 +15,5 @@ document.addEventListener('DOMContentLoaded', function() {
   buttons.forEach(button => {
     button.href = buatUrlWA();
   });
+
 });
