@@ -3,47 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Jasa angkutan barang terpercaya dari Jepara ke seluruh Jawa. Armada lengkap, harga transparan, layanan cepat.">
   <title>SIMPANG RAYA TRANS - Jasa Angkutan Barang</title>
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome (untuk ikon) -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress"></div>
+
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="spinner"></div>
+    <p>Muat Armada...</p>
+  </div>
+
   <!-- Header -->
-  <div class="header animate">
+  <div class="header" data-aos="fade-up">
     <h1>SIMPANG RAYA TRANS JEPARA</h1>
     <p>Jasa Angkutan Barang Terpercaya</p>
   </div>
 
   <!-- Hero Content -->
-  <div class="hero-content animate delay-1">
+  <div class="hero-content" data-aos="zoom-in" data-aos-delay="100">
     <h2>Kirim Barang Mudah & Aman</h2>
-    <p>Kirim Ke  — Jakarta, Jabotabek, Jawa Barat, Jawa Tengah, Sukabumi dan lain-lain</p>
-    <a href="#" id="waButton" class="cta-button pulse">💬 Chat via WhatsApp</a>
+    <p>Kirim ke — Jakarta, Jabotabek, Jawa Barat, Jawa Tengah, Sukabumi dan lain-lain</p>
+    <a href="#" id="waButton" class="cta-button">💬 Chat via WhatsApp</a>
   </div>
 
   <!-- Gallery Section -->
-  <div class="gallery-section animate delay-2">
+  <div class="gallery-section" data-aos="fade-up">
     <h2 class="section-title">Armada Kami</h2>
     <div class="gallery">
-      <img src="images/truck (1).jpg" alt="Truk 1" class="interactive-img">
-      <img src="images/truck (2).jpg" alt="Truk 2" class="interactive-img">
-      <img src="images/truck (3).jpg" alt="Truk 3" class="interactive-img">
-      <img src="images/truck (4).jpg" alt="Truk 4" class="interactive-img">
-      <img src="images/truck (5).jpg" alt="Truk 5" class="interactive-img">
-      <img src="images/truck (6).jpg" alt="Truk 6" class="interactive-img">
-      <img src="images/truck (7).jpg" alt="Truk 7" class="interactive-img">
-      <img src="images/truck (8).jpg" alt="Truk 8" class="interactive-img">
-      <img src="images/truck (9).jpg" alt="Truk 9" class="interactive-img">
-      <img src="images/truck (10).jpg" alt="Truk 10" class="interactive-img">
-      <img src="images/truck (11).jpg" alt="Truk 11" class="interactive-img">
+      <img src="images/truck (1).jpg" loading="lazy" alt="Truk 1" class="interactive-img">
+      <img src="images/truck (2).jpg" loading="lazy" alt="Truk 2" class="interactive-img">
+      <img src="images/truck (3).jpg" loading="lazy" alt="Truk 3" class="interactive-img">
+      <img src="images/truck (4).jpg" loading="lazy" alt="Truk 4" class="interactive-img">
+      <img src="images/truck (5).jpg" loading="lazy" alt="Truk 5" class="interactive-img">
+      <img src="images/truck (6).jpg" loading="lazy" alt="Truk 6" class="interactive-img">
+      <img src="images/truck (7).jpg" loading="lazy" alt="Truk 7" class="interactive-img">
+      <img src="images/truck (8).jpg" loading="lazy" alt="Truk 8" class="interactive-img">
+      <img src="images/truck (9).jpg" loading="lazy" alt="Truk 9" class="interactive-img">
+      <img src="images/truck (10).jpg" loading="lazy" alt="Truk 10" class="interactive-img">
+      <img src="images/truck (11).jpg" loading="lazy" alt="Truk 11" class="interactive-img">
     </div>
   </div>
 
   <!-- Services Section -->
-  <div class="services-section animate delay-3">
+  <div class="services-section" data-aos="fade-up" data-aos-delay="200">
     <h2 class="section-title">Wilayah Layanan Kami</h2>
     <div class="services-grid">
       <div class="service-card"><i>🚚</i><h3>JAKARTA</h3><p>Pengiriman cepat & aman</p></div>
@@ -55,28 +70,37 @@
   </div>
 
   <!-- Contact Section -->
-  <div class="contact-section animate delay-4">
+  <div class="contact-section" data-aos="fade-up" data-aos-delay="300">
     <h2 class="contact-title">Hubungi Kami Sekarang!</h2>
     <p>Untuk informasi harga, estimasi waktu, dan booking pengiriman</p>
-    <a href="#" id="waButton2" class="whatsapp-btn pulse">💬 Chat via WhatsApp</a>
-    <p><i>📞</i> +62 823-3102-5610</p>
+    <a href="#" id="waButton2" class="whatsapp-btn">💬 Chat via WhatsApp</a>
+    <p><i class="fas fa-phone"></i> +62 823-3102-5610</p>
   </div>
+  
+  <!-- Animated Wave -->
+  <div class="wave"></div>
 
   <!-- Footer -->
   <div class="footer">
     © 2025 SIMPANG RAYA TRANS | Jasa Angkutan Barang Jepara
   </div>
 
-  <script src="script.js"></script>
-  <!-- UNTUK gambar bisa di klik -->
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top">↑</button>
+
   <!-- Lightbox Modal -->
   <div id="lightbox" class="lightbox">
     <span class="close">&times;</span>
     <img class="lightbox-content" id="lightbox-img">
     <div class="caption"></div>
   </div>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
-
-
